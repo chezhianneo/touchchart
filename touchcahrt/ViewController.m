@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "BarChartThreeView.h"
+#import "BarChartView.h"
+#import "TBMChartView.h"
+#import "<#header#>"
 
 @interface ViewController ()
 
