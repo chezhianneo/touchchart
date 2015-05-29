@@ -17,8 +17,8 @@
 		8FE2B0DF1B1852F1001FF9B1 /* BarChartThreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0D21B1852F1001FF9B1 /* BarChartThreeView.m */; };
 		8FE2B0E01B1852F1001FF9B1 /* BarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0D41B1852F1001FF9B1 /* BarChartView.m */; };
 		8FE2B0E11B1852F1001FF9B1 /* LineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0D61B1852F1001FF9B1 /* LineChart.m */; };
-		8FE2B0E21B1852F1001FF9B1 /* TBMChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0D81B1852F1001FF9B1 /* TBMChartView.m */; };
-		8FE2B0E31B1852F1001FF9B1 /* TBMSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0DA1B1852F1001FF9B1 /* TBMSlice.m */; };
+		8FE2B0E21B1852F1001FF9B1 /* PieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0D81B1852F1001FF9B1 /* PieChartView.m */; };
+		8FE2B0E31B1852F1001FF9B1 /* PieSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0DA1B1852F1001FF9B1 /* PieSlice.m */; };
 		8FE2B0E41B1852F1001FF9B1 /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0DC1B1852F1001FF9B1 /* UIImage+ColorAtPixel.m */; };
 		8FE2B0E51B1852F1001FF9B1 /* WalmartLandingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0DE1B1852F1001FF9B1 /* WalmartLandingPageViewController.m */; };
 /* End PBXBuildFile section */
@@ -53,10 +53,10 @@
 		8FE2B0D41B1852F1001FF9B1 /* BarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarChartView.m; sourceTree = "<group>"; };
 		8FE2B0D51B1852F1001FF9B1 /* LineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChart.h; sourceTree = "<group>"; };
 		8FE2B0D61B1852F1001FF9B1 /* LineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChart.m; sourceTree = "<group>"; };
-		8FE2B0D71B1852F1001FF9B1 /* TBMChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMChartView.h; sourceTree = "<group>"; };
-		8FE2B0D81B1852F1001FF9B1 /* TBMChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMChartView.m; sourceTree = "<group>"; };
-		8FE2B0D91B1852F1001FF9B1 /* TBMSlice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMSlice.h; sourceTree = "<group>"; };
-		8FE2B0DA1B1852F1001FF9B1 /* TBMSlice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMSlice.m; sourceTree = "<group>"; };
+		8FE2B0D71B1852F1001FF9B1 /* PieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartView.h; sourceTree = "<group>"; };
+		8FE2B0D81B1852F1001FF9B1 /* PieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartView.m; sourceTree = "<group>"; };
+		8FE2B0D91B1852F1001FF9B1 /* PieSlice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieSlice.h; sourceTree = "<group>"; };
+		8FE2B0DA1B1852F1001FF9B1 /* PieSlice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieSlice.m; sourceTree = "<group>"; };
 		8FE2B0DB1B1852F1001FF9B1 /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
 		8FE2B0DC1B1852F1001FF9B1 /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
 		8FE2B0DD1B1852F1001FF9B1 /* WalmartLandingPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalmartLandingPageViewController.h; sourceTree = "<group>"; };
@@ -178,10 +178,10 @@
 		8FE2B0E81B18530C001FF9B1 /* Pie Chart */ = {
 			isa = PBXGroup;
 			children = (
-				8FE2B0D71B1852F1001FF9B1 /* TBMChartView.h */,
-				8FE2B0D81B1852F1001FF9B1 /* TBMChartView.m */,
-				8FE2B0D91B1852F1001FF9B1 /* TBMSlice.h */,
-				8FE2B0DA1B1852F1001FF9B1 /* TBMSlice.m */,
+				8FE2B0D71B1852F1001FF9B1 /* PieChartView.h */,
+				8FE2B0D81B1852F1001FF9B1 /* PieChartView.m */,
+				8FE2B0D91B1852F1001FF9B1 /* PieSlice.h */,
+				8FE2B0DA1B1852F1001FF9B1 /* PieSlice.m */,
 			);
 			name = "Pie Chart";
 			sourceTree = "<group>";
@@ -286,8 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FE2B0E31B1852F1001FF9B1 /* TBMSlice.m in Sources */,
-				8FE2B0E21B1852F1001FF9B1 /* TBMChartView.m in Sources */,
+				8FE2B0E31B1852F1001FF9B1 /* PieSlice.m in Sources */,
+				8FE2B0E21B1852F1001FF9B1 /* PieChartView.m in Sources */,
 				8FE2B0DF1B1852F1001FF9B1 /* BarChartThreeView.m in Sources */,
 				8FE2B0B31B1852E2001FF9B1 /* ViewController.m in Sources */,
 				8FE2B0B01B1852E2001FF9B1 /* AppDelegate.m in Sources */,
@@ -492,6 +492,7 @@
 				8FE2B0CC1B1852E3001FF9B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FE2B0CD1B1852E3001FF9B1 /* Build configuration list for PBXNativeTarget "touchcahrtTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +501,7 @@
 				8FE2B0CF1B1852E3001FF9B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
