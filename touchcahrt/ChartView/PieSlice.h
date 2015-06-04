@@ -6,13 +6,16 @@
 //  Copyright (c) 2012 Benjamin DOMERGUE. All rights reserved.
 //
 
-@interface TBMSlice : NSObject
+#import <UIKit/UIKit.h>
+
+
+@interface PieSlice : NSObject
 {
 	UIColor *_color;
 	CGFloat _percentage;
 	NSString *_name;
 }
-+ (TBMSlice *)sliceWithColor:(UIColor *)color percentage:(CGFloat)percentage name:(NSString *)name;
++ (PieSlice *)sliceWithColor:(UIColor *)color percentage:(CGFloat)percentage name:(NSString *)name;
 
 @property (nonatomic, readonly) UIColor *color;
 @property (nonatomic, readonly) CGFloat percentage;

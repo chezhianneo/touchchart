@@ -6,17 +6,17 @@
 //  Copyright (c) 2012 Benjamin DOMERGUE. All rights reserved.
 //
 
-#import "TBMSlice.h"
+#import "PieSlice.h"
 
-@implementation TBMSlice
+@implementation PieSlice
 
 @synthesize color = _color;
 @synthesize percentage = _percentage;
 @synthesize name = _name;
 
-+ (TBMSlice *)sliceWithColor:(UIColor *)color percentage:(CGFloat)percentage name:(NSString *)name
++ (PieSlice *)sliceWithColor:(UIColor *)color percentage:(CGFloat)percentage name:(NSString *)name
 {
-	TBMSlice *newSlice = [[TBMSlice alloc] init];
+	PieSlice *newSlice = [[PieSlice alloc] init];
 //	newSlice->_color = [color retain];
 //	newSlice->_percentage = percentage;
 //	newSlice->_name = [name retain];

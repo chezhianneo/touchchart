@@ -2,12 +2,11 @@
 //  TBMChartView.m
 //  PieChart
 //
-//  Created by Benjamin DOMERGUE on 17/11/12.
-//  Copyright (c) 2012 Benjamin DOMERGUE. All rights reserved.
+//  Created by Chezhian Aurlraj on 17/11/13.
 //
 
-#import "TBMChartView.h"
-#import "TBMSlice.h"
+#import "PieChartView.h"
+#import "PieSlice.h"
 
 #import <QuartzCore/QuartzCore.h>
 
@@ -25,13 +24,13 @@
 //#define LAYER_FLAT_TRANSFORM .6
 //#define LAYER_REPLACE_TRANSFORM -50.
 //
-@interface TBMChartView (Private)
+@interface PieChartView (Private)
 
 - (void)_addSlicesLayers;
 
 @end
 
-@interface TBMChartView (Drawing)
+@interface PieChartView (Drawing)
 
 -(CGPathRef)_slicePathWithStartAngle:(CGFloat)degStartAngle endAngle:(CGFloat)degEndAngle;
 -(CALayer *)_sliceLayerWithStartAngle:(CGFloat)start endAngle:(CGFloat)end color:(UIColor *)color;
@@ -43,7 +42,7 @@
 
 @end
 
-@implementation TBMChartView
+@implementation PieChartView
 @synthesize slices = _slices;
 
 - (id)initWithFrame:(CGRect)frame

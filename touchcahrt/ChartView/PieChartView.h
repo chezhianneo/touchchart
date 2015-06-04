@@ -2,8 +2,7 @@
 //  TBMChartView.h
 //  PieChart
 //
-//  Created by Benjamin DOMERGUE on 17/11/12.
-//  Copyright (c) 2012 Benjamin DOMERGUE. All rights reserved.
+//  Created by Chezhian Arulraj on 17/11/12.
 //
 
 #import <UIKit/UIKit.h>
@@ -15,11 +14,10 @@
 
 @end
 
-@interface TBMChartView : UIView
+@interface PieChartView : UIView
 {
 	CGPoint _center;
 	CGFloat _radius;
-	
 	NSArray *_slices;
 }
 @property (nonatomic, retain) NSArray *slices;
