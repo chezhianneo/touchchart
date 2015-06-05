@@ -5,6 +5,7 @@
 
 #import "BarChartView.h"
 #import "NSString+NMSchemeItemDraw.h"
+
 #define MARGIN_LEFT 50
 #define MARGIN_BOTTOM 60
 #define MARGIN_TOP 60
@@ -392,7 +393,8 @@ static const CGFloat colorsOrange2[8] =
                 sec =(gNumber ==1 )?10:0;
                 
                 
-                [valueStr drawWithBasePoint:CGPointMake(vNumber * chartColumnWidth + baseGroundX + columnWidth * vNumber + columnWidth *gNumber+columnScaleFactor *vNumber + 10 + sec, baseGroundY - columnHeight - [valueStr sizeWithFont:[UIFont boldSystemFontOfSize:12.0]].height -24)
+                
+                [valueStr drawWithBasePoint:CGPointMake(vNumber * chartColumnWidth + baseGroundX + columnWidth * vNumber + columnWidth *gNumber+columnScaleFactor *vNumber + 10 + sec, baseGroundY - columnHeight - [valueStr sizeWithAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:12.0] }].height -24)
                                   andAngle:-M_PI/3
                                    andFont:[UIFont boldSystemFontOfSize:12.0]];
 

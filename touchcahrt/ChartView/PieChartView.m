@@ -66,14 +66,14 @@
 
 @end
 
-@implementation TBMChartView (Private)
+@implementation PieChartView (Private)
 
 - (void)_addSlicesLayers
 {
 	CGFloat lastSliceAngle = .0;
 	NSArray *slices = self.slices;
 	CALayer *chartViewLayer = self.layer;
-	for(TBMSlice *slice in slices)
+	for(PieSlice *slice in slices)
 	{
         CGFloat sliceAngle = 360 * slice.percentage / 100;
 		CGFloat sliceAngleEnd = (lastSliceAngle + sliceAngle);
@@ -99,7 +99,7 @@
 
 @end
 
-@implementation TBMChartView (Drawing)
+@implementation PieChartView (Drawing)
 
 - (UIBezierPath *)_cleanBezierPath
 {
@@ -220,15 +220,12 @@
     int i = 0;
     UITouch *touch   = [touches anyObject];
     CGPoint touchPoint = [touch locationInView:self];
-    DLog(@"%@ \n %@ \n %@ \n %d",NSStringFromCGPoint(touchPoint),NSStringFromCGRect(self.bounds),NSStringFromCGRect(CGRectMake(_center.x, _center.y, touchPoint.x - _center.x, touchPoint.y - _center.y)),CGRectIntersectsRect(self.bounds, CGRectMake(_center.x, _center.y, touchPoint.x - _center.x, touchPoint.y - _center.y)));
 
     CGRect calibratedRect = CGRectMake(_center.x, _center.y, touchPoint.x - _center.x, touchPoint.y - _center.y);
-     DLog(@"%@ \n %@ \n %f",NSStringFromCGRect(calibratedRect),NSStringFromCGPoint(_center),_radius);
     float sumOfSquaresOfSize = powf(calibratedRect.size.width, 2.) + powf(calibratedRect.size.height, 2.); // this line and the next line form the pythagoras theorem
     CGFloat touchPointRadius = sqrtf(sumOfSquaresOfSize);
     if(touchPoint.y <= _center.y  ? touchPointRadius > _radius : touchPointRadius > (_radius + SHADOW_OFFSET))
     {
-        DLog(@"tap outside of chart");
         return;
     }
     else
@@ -244,13 +241,12 @@
         
         CGFloat lastSliceAngle = .0;
         i = 0;
-        for(TBMSlice *slice in self.slices)
+        for(PieSlice *slice in self.slices)
         {
             CGFloat sliceAngle = 360 * slice.percentage / 100;
             CGFloat sliceAngleEnd = (lastSliceAngle + sliceAngle);
             if(theta > lastSliceAngle && theta <= sliceAngleEnd)
             {
-                DLog(@"the tap is at %d part of the pie chart",i);
                 break;
             }
             lastSliceAngle += sliceAngle;
@@ -258,7 +254,7 @@
         }
         
     }
-    [self.delegate getTheEventPieChart:[(TBMSlice*)[self.slices objectAtIndex:i]name]];
+    [self.delegate getTheEventPieChart:[(PieSlice *)[self.slices objectAtIndex:i]name]];
     
 }
 

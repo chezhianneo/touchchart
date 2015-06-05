@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>5790B38E-40CC-4752-8B6A-4182F0948556</string>
 	<key>IDESourceControlProjectName</key>
-	<string>touchcahrt</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B7243674F357DADBFD96064FFF8CEB044E28E67F</key>
 		<string>https://github.com/chezhianneo/touchchart.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>touchcahrt.xcodeproj</string>
+	<string>touchcahrt.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B7243674F357DADBFD96064FFF8CEB044E28E67F</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>B7243674F357DADBFD96064FFF8CEB044E28E67F</string>
 			<key>IDESourceControlWCCName</key>
-			<string>touchchart</string>
+			<string>Feature%20Bar</string>
 		</dict>
 	</array>
 </dict>

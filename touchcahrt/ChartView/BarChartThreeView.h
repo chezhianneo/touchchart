@@ -4,6 +4,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "BarChartView.h"
+
 //typedef enum
 //{
 //    KBarChartView =0,

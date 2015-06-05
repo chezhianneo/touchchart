@@ -20,7 +20,6 @@
 		8FE2B0E21B1852F1001FF9B1 /* PieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0D81B1852F1001FF9B1 /* PieChartView.m */; };
 		8FE2B0E31B1852F1001FF9B1 /* PieSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0DA1B1852F1001FF9B1 /* PieSlice.m */; };
 		8FE2B0E41B1852F1001FF9B1 /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0DC1B1852F1001FF9B1 /* UIImage+ColorAtPixel.m */; };
-		8FE2B0E51B1852F1001FF9B1 /* WalmartLandingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0DE1B1852F1001FF9B1 /* WalmartLandingPageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -294,7 +293,6 @@
 				8FE2B0E41B1852F1001FF9B1 /* UIImage+ColorAtPixel.m in Sources */,
 				8FE2B0E01B1852F1001FF9B1 /* BarChartView.m in Sources */,
 				8FE2B0E11B1852F1001FF9B1 /* LineChart.m in Sources */,
-				8FE2B0E51B1852F1001FF9B1 /* WalmartLandingPageViewController.m in Sources */,
 				8FE2B0AD1B1852E2001FF9B1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -411,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -424,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = touchcahrt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -434,6 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = touchcahrt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
