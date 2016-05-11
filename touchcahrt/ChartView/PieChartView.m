@@ -66,14 +66,14 @@
 
 @end
 
-@implementation TBMChartView (Private)
+@implementation PieChartView (Private)
 
 - (void)_addSlicesLayers
 {
 	CGFloat lastSliceAngle = .0;
 	NSArray *slices = self.slices;
 	CALayer *chartViewLayer = self.layer;
-	for(TBMSlice *slice in slices)
+	for(PieSlice *slice in slices)
 	{
         CGFloat sliceAngle = 360 * slice.percentage / 100;
 		CGFloat sliceAngleEnd = (lastSliceAngle + sliceAngle);
@@ -220,7 +220,7 @@
     int i = 0;
     UITouch *touch   = [touches anyObject];
     CGPoint touchPoint = [touch locationInView:self];
-    DLog(@"%@ \n %@ \n %@ \n %d",NSStringFromCGPoint(touchPoint),NSStringFromCGRect(self.bounds),NSStringFromCGRect(CGRectMake(_center.x, _center.y, touchPoint.x - _center.x, touchPoint.y - _center.y)),CGRectIntersectsRect(self.bounds, CGRectMake(_center.x, _center.y, touchPoint.x - _center.x, touchPoint.y - _center.y)));
+    NSLog(@"%@ \n %@ \n %@ \n %d",NSStringFromCGPoint(touchPoint),NSStringFromCGRect(self.bounds),NSStringFromCGRect(CGRectMake(_center.x, _center.y, touchPoint.x - _center.x, touchPoint.y - _center.y)),CGRectIntersectsRect(self.bounds, CGRectMake(_center.x, _center.y, touchPoint.x - _center.x, touchPoint.y - _center.y)));
 
     CGRect calibratedRect = CGRectMake(_center.x, _center.y, touchPoint.x - _center.x, touchPoint.y - _center.y);
      DLog(@"%@ \n %@ \n %f",NSStringFromCGRect(calibratedRect),NSStringFromCGPoint(_center),_radius);
@@ -244,7 +244,7 @@
         
         CGFloat lastSliceAngle = .0;
         i = 0;
-        for(TBMSlice *slice in self.slices)
+        for(PieSlice *slice in self.slices)
         {
             CGFloat sliceAngle = 360 * slice.percentage / 100;
             CGFloat sliceAngleEnd = (lastSliceAngle + sliceAngle);
@@ -258,7 +258,7 @@
         }
         
     }
-    [self.delegate getTheEventPieChart:[(TBMSlice*)[self.slices objectAtIndex:i]name]];
+    [self.delegate getTheEventPieChart:[(PieSlice*)[self.slices objectAtIndex:i]name]];
     
 }
 

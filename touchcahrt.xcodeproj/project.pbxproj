@@ -20,7 +20,6 @@
 		8FE2B0E21B1852F1001FF9B1 /* PieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0D81B1852F1001FF9B1 /* PieChartView.m */; };
 		8FE2B0E31B1852F1001FF9B1 /* PieSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0DA1B1852F1001FF9B1 /* PieSlice.m */; };
 		8FE2B0E41B1852F1001FF9B1 /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0DC1B1852F1001FF9B1 /* UIImage+ColorAtPixel.m */; };
-		8FE2B0E51B1852F1001FF9B1 /* WalmartLandingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2B0DE1B1852F1001FF9B1 /* WalmartLandingPageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +58,6 @@
 		8FE2B0DA1B1852F1001FF9B1 /* PieSlice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieSlice.m; sourceTree = "<group>"; };
 		8FE2B0DB1B1852F1001FF9B1 /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
 		8FE2B0DC1B1852F1001FF9B1 /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
-		8FE2B0DD1B1852F1001FF9B1 /* WalmartLandingPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalmartLandingPageViewController.h; sourceTree = "<group>"; };
-		8FE2B0DE1B1852F1001FF9B1 /* WalmartLandingPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalmartLandingPageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +146,6 @@
 				8FE2B0E61B1852FA001FF9B1 /* Bar Chart */,
 				8FE2B0DB1B1852F1001FF9B1 /* UIImage+ColorAtPixel.h */,
 				8FE2B0DC1B1852F1001FF9B1 /* UIImage+ColorAtPixel.m */,
-				8FE2B0DD1B1852F1001FF9B1 /* WalmartLandingPageViewController.h */,
-				8FE2B0DE1B1852F1001FF9B1 /* WalmartLandingPageViewController.m */,
 			);
 			path = ChartView;
 			sourceTree = "<group>";
@@ -294,7 +289,6 @@
 				8FE2B0E41B1852F1001FF9B1 /* UIImage+ColorAtPixel.m in Sources */,
 				8FE2B0E01B1852F1001FF9B1 /* BarChartView.m in Sources */,
 				8FE2B0E11B1852F1001FF9B1 /* LineChart.m in Sources */,
-				8FE2B0E51B1852F1001FF9B1 /* WalmartLandingPageViewController.m in Sources */,
 				8FE2B0AD1B1852E2001FF9B1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

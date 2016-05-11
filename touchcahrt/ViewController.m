@@ -2,7 +2,6 @@
 //  ViewController.m
 //  touchcahrt
 //
-//  Created by 01HW842980 on 29/05/15.
 //  Copyright (c) 2015 Chezhian. All rights reserved.
 //
 
@@ -10,7 +9,6 @@
 #import "BarChartThreeView.h"
 #import "BarChartView.h"
 #import "TBMChartView.h"
-#import "<#header#>"
 
 @interface ViewController ()
 
